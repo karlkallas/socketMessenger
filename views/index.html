@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WebScockets</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+        <link href="/index.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <div id="login">
+          <div>
+            <input id="handle" type="text" placeholder="Name" />
+            <button id="submit">log in</button>
+          </div>
+          <div id="error"> Please use another username </div>
+        </div>
+
+        <div id="logout">
+            <div>
+              <button id="logout_btn">log out</button>
+            </div>
+          </div>
+
+        <div id="chat">
+            <h2>Chat</h2>
+            <div id="chat-window">
+                <div id="output"></div>
+                <div id="feedback"></div>
+            </div>
+            <input id="message" type="text" placeholder="Message" />
+            <button id="send">Send</button>
+        </div>
+
+        <div>
+          <h3 id="userlistheader"> Connected users: </h3>
+          <div id="userlist">
+
+          </div>
+
+        </div>
+        
+
+    </body>
+    <script src="/index.js"></script>
+</html>
